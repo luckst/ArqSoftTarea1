@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Web", "1.Web", "{7A27C4C8-A212-4EA1-AB09-719F79FCCC94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Business", "2.Business", "{6100D4C6-D115-4785-83E1-E24DECEC288B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Data", "3.Data", "{AB474659-648B-40E0-BEF7-3689B66E9D9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Common", "4.Common", "{630450E1-334F-4C9B-B934-3198C3A6DDE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArqSoftware.CRUD.Business", "ArqSoftware.CRUD.Business\ArqSoftware.CRUD.Business.csproj", "{8566FF7D-2383-4012-929A-34FDBEC8780E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArqSoftware.CRUD.Data", "ArqSoftware.CRUD.Data\ArqSoftware.CRUD.Data.csproj", "{53B01F19-3773-4A23-B8B2-4E05313D6DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArqSoftware.CRUD.Models", "ArqSoftware.CRUD.Models\ArqSoftware.CRUD.Models.csproj", "{B9ACBCCC-F5D7-47FB-9D8D-306978658575}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8566FF7D-2383-4012-929A-34FDBEC8780E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8566FF7D-2383-4012-929A-34FDBEC8780E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8566FF7D-2383-4012-929A-34FDBEC8780E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8566FF7D-2383-4012-929A-34FDBEC8780E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B01F19-3773-4A23-B8B2-4E05313D6DB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B01F19-3773-4A23-B8B2-4E05313D6DB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B01F19-3773-4A23-B8B2-4E05313D6DB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B01F19-3773-4A23-B8B2-4E05313D6DB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9ACBCCC-F5D7-47FB-9D8D-306978658575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9ACBCCC-F5D7-47FB-9D8D-306978658575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9ACBCCC-F5D7-47FB-9D8D-306978658575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9ACBCCC-F5D7-47FB-9D8D-306978658575}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8566FF7D-2383-4012-929A-34FDBEC8780E} = {6100D4C6-D115-4785-83E1-E24DECEC288B}
+		{53B01F19-3773-4A23-B8B2-4E05313D6DB0} = {AB474659-648B-40E0-BEF7-3689B66E9D9C}
+		{B9ACBCCC-F5D7-47FB-9D8D-306978658575} = {630450E1-334F-4C9B-B934-3198C3A6DDE0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F349FD3B-589A-43D8-8966-2AD289B031C6}
+	EndGlobalSection
+EndGlobal
