@@ -27,7 +27,7 @@ namespace ArqSoftware.CRUD.Data
                     .AddJsonFile($"appsettings.{env}.json", optional: true)
                     .Build();
 
-                optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+                optionsBuilder.UseSqlServer(config.GetConnectionString("CrudContext"));
             }
 
         }
