@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ArqSoftware.CRUD.Data\ArqSoftware.CRUD.Data.csproj" />
-    <ProjectReference Include="..\ArqSoftware.CRUD.Models\ArqSoftware.CRUD.Models.csproj" />
   </ItemGroup>
 
 </Project>

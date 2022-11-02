@@ -1,4 +1,5 @@
-﻿using ArqSoftware.CRUD.Models;
+﻿
+using ArqSoftware.CRUD.Models;
 
 namespace ArqSoftware.CRUD.Business.Services
 {
