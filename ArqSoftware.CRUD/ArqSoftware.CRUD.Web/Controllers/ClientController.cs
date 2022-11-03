@@ -53,16 +53,29 @@ namespace ArqSoftware.CRUD.Web.Controllers
         // GET: ClientController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var client = UtilidadHttp<ClientViewModel>.EnviarPeticionREST($"clients/{id}", HttpMethod.Get);
+            return View(client);
         }
 
         // POST: ClientController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, ClientViewModel model)
         {
             try
             {
+                var client = new Client
+                {
+                    CreationDate = DateTime.Now,
+                    DocumentNumber = model.DocumentNumber,
+                    Email = model.Email,
+                    FirstMidName = model.FirstMidName,
+                    LastName = model.LastName,
+                    Id = id,
+                };
+
+                UtilidadHttp<Client>.EnviarPeticionREST("clients", HttpMethod.Put, body: client);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -74,7 +87,8 @@ namespace ArqSoftware.CRUD.Web.Controllers
         // GET: ClientController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var client = UtilidadHttp<ClientViewModel>.EnviarPeticionREST($"clients/{id}", HttpMethod.Get);
+            return View(client);
         }
 
         // POST: ClientController/Delete/5
@@ -84,6 +98,8 @@ namespace ArqSoftware.CRUD.Web.Controllers
         {
             try
             {
+                UtilidadHttp<Client>.EnviarPeticionREST($"clients/{id}", HttpMethod.Delete);
+
                 return RedirectToAction(nameof(Index));
             }
             catch
